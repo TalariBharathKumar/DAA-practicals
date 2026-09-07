@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, key;
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    int arr[n];
+
+    cout << "Enter array elements: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "Enter element to search: ";
+    cin >> key;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == key) {
+            cout << "Element found at position " << i + 1 << endl;
+            return 0;
+        }
+    }
+
+    cout << "Element not found" << endl;
+
+    return 0;
+} 
+
+
+
+OUT PUT:
+Enter number of elements: 5
+Enter array elements: 10 20 30 40 50
+Enter element to search: 30
+Element found at position 3
